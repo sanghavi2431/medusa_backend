@@ -1,0 +1,16 @@
+version: 0.0
+os: linux
+
+files:
+  - source: /
+    destination: /home/ubuntu/my-medusa-store
+
+hooks: 
+  AfterInstall:
+    - location: scripts/AfterInstall.sh
+      timeout: 600
+      runas: root
+  ApplicationStart:
+    - location: scripts/Applicationstart.sh
+      timeout: 300
+      runas: root
