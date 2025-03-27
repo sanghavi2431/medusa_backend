@@ -2,7 +2,7 @@
 
 set -e
 
-cd /home/ubuntu/my-medusa-store
+cd /home/ubuntu/my-medusa-store-1
 
 echo "Stopping existing Medusa process"
 pm2 delete medusa-server || true
