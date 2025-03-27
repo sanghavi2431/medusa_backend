@@ -3,7 +3,7 @@ os: linux
 
 files:
   - source: /
-    destination: /home/ubuntu/my-medusa-store
+    destination: /home/ubuntu/my-medusa-store-1
 
 hooks: 
   AfterInstall:
