@@ -11,4 +11,3 @@ echo "Saving PM2 process..."
 pm2 save
 
 echo "ApplicationStart step completed"
-
