@@ -11,7 +11,7 @@ echo "Removing old dependencies"
 rm -rf node_modules package-lock.json
 
 echo "Installing fresh dependencies"
-npm install
+npm install --legacy-peer-deps
 
 echo "Running database migrations"
 if npx medusa db:migrate; then
