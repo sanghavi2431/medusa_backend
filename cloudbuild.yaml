@@ -22,7 +22,7 @@ steps:
           sudo git pull origin master &&
           sudo chmod +x scripts/*.sh &&
           sudo ./scripts/AfterInstall.sh &&
-          sudo ./scripts/ApplicationStart.sh
+          sudo ./scripts/Applicationstart.sh
         "
 
 artifacts:
