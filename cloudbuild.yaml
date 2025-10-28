@@ -19,10 +19,10 @@ steps:
         echo "Connecting to Compute Engine..."
         gcloud compute ssh ubuntu@medusa --zone=us-east4-a --command="
           cd /home/ubuntu/medusa-server/medusa_ecommerce_store-1 &&
-          sudo git pull origin master &&
-          sudo chmod +x scripts/*.sh &&
-          sudo ./scripts/AfterInstall.sh &&
-          sudo ./scripts/Applicationstart.sh
+          git pull origin master &&
+          chmod +x scripts/*.sh &&
+          ./scripts/AfterInstall.sh &&
+          ./scripts/Applicationstart.sh
         "
 
 artifacts:
