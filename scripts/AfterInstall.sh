@@ -21,4 +21,4 @@ else
   exit 1
 fi
 
-echo "AfterInstall step completed."
+echo "AfterInstall step completed..."
