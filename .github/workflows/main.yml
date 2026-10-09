@@ -35,7 +35,7 @@ jobs:
           corepack prepare yarn@stable --activate
 
       - name: Install dependencies
-        run: yarn install
+        run: yarn install --no-immutable
 
       - name: Run Yarn audit
         run: yarn npm audit --all --recursive | tee yarn-audit-report.txt
